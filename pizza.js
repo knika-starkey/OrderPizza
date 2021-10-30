@@ -11,8 +11,8 @@ function orderingPizza(orderNum, count = 1) {
     "вегетарианская пицца ",
     "грибная пицца",
   ];
-  if (count == undefined || count == "") count = 1;
-  if (orderNum == undefined || orderNum == "") {
+  if (count == "") count = 1;
+  if (orderNum == "") {
     str += pizzas[0] + " - " + count + "шт.";
     return str;
   } else if (isNaN(orderNum) || isNaN(count) || orderNum > pizzas.length - 1) {
